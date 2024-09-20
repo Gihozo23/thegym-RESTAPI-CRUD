@@ -1,0 +1,22 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "creating a RESTful API using Node.js, Express, and MongoDB to perform CRUD (Create, Read, Update, Delete) operations on a database.",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gihozo23/thegym-RESTAPI-CRUD.git"
+  },
+  "author": "Christelle Gihozo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gihozo23/thegym-RESTAPI-CRUD/issues"
+  },
+  "homepage": "https://github.com/Gihozo23/thegym-RESTAPI-CRUD#readme",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
