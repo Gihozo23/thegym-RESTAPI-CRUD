@@ -2,7 +2,7 @@ name: Daily Contributions
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * 1-5'
 
 jobs:
   make-contribution:
@@ -13,18 +13,11 @@ jobs:
         with:
           # Checkout with full commit history
           fetch-depth: 0
-      - name: Set up Git identity
-        run: |
-          git config --global user.name "Gihozo23"
-          git config --global user.email "christellegihozo23@gmail.com"
       - name: Make daily contribution
         run: |
-          for i in {1..5}; do
-            echo "Making daily contribution #$i"
-            echo "Commit #$i on $(date)" >> README.md
-            git add README.md
-            git commit -m "Daily contribution #$i"
-          done
+          # Replace this command with your own command or script that makes the changes
+          echo "Making daily contribution"
+          echo "$(date)" >> README.md
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
