@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
       - name: Set up Git identity
         run: |
-          git config --global user.name "Gihozo Christelle"
+          git config --global user.name "Gihozo23"
           git config --global user.email "christellegihozo23@gmail.com"
       - name: Make daily contribution
         run: |
